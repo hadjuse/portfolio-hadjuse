@@ -1,0 +1,55 @@
+.introduction {
+    max-width: 500px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: left;
+    font-family: "Inter", sans-serif;
+}
+
+.introduction-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.introduction-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #a0a0a0;
+}
+
+.introduction-description {
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.introduction-closing {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .introduction {
+        max-width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .introduction-title {
+        font-size: 1.8rem;
+    }
+
+    .introduction-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .introduction-description {
+        font-size: 0.95rem;
+    }
+
+    .introduction-closing {
+        font-size: 1rem;
+    }
+}
