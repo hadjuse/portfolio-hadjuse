@@ -1,4 +1,4 @@
-import './Name.css'
+import '../../../assets/css/Name.css'
 
 function Name({ name } : { name: string }){
     return (

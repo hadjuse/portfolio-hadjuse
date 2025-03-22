@@ -1,5 +1,5 @@
 import React from "react";
-import "./Introduction.css"; // Import the CSS file
+import "../../../assets/css/Introduction.css"; // Import the CSS file
 
 interface IntroductionProps {
     title: string;
