@@ -1,10 +1,16 @@
+/* Orb.css */
 .orb-container {
-    position: absolute;           /* Allows precise positioning relative to the nearest positioned ancestor */
-    right: 10%;                  /* Positions the orb 10% from the right edge; adjust as needed */
-    top: 50%;                    /* Moves the top edge to the vertical center of the parent */
-    transform: translateY(-50%); /* Shifts the orb up by half its height to center it vertically */
-    width: 30vw;                 /* Sets the width to 30% of the viewport width for responsiveness */
-    height: 30vw;                /* Matches the height to the width to keep the orb circular */
-    z-index: 2;                  /* Ensures the orb stays above other elements if needed */
-    background-color: transparent; /* Optional: makes the container transparent to blend with the page background */
+    position: relative; /* So the Name can be absolutely centered */
+    display: block;     /* default block, or you can keep it as is */
+    margin: 10% auto;     /* center horizontally within its parent */
+    width: clamp(200px, 30vw, 400px);
+    height: clamp(200px, 30vw, 400px);
+    background-color: transparent;
+}
+
+@media (max-width: 600px) {
+    .orb-container {
+        width: clamp(150px, 40vw, 300px);
+        height: clamp(150px, 40vw, 300px);
+    }
 }
