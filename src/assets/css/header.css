@@ -3,81 +3,87 @@
 
 /* Style the header */
 .App-header {
-    background-color: #001f3f; /* Dark blue for a techy, professional feel */
-    height: 60px; /* Fixed height for consistency */
+    background-color: #001f3f;
+    height: 60px;
     display: flex;
-    align-items: center; /* Vertically center the nav */
-    justify-content: center; /* Horizontally center the nav */
-    position: fixed; /* Stays at the top when scrolling */
-    width: 100%; /* Full width */
-    top: 0; /* Aligns to the top of the viewport */
-    z-index: 100; /* Ensures it stays above other content */
-    font-family: 'Roboto', sans-serif; /* Clean, modern typography */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the nav container */
 .App-nav {
-    width: 100%; /* Takes full width of the header */
+    width: 100%;
 }
 
 /* Style the unordered list */
 .App-nav ul {
-    display: flex; /* Horizontal layout for nav items */
-    justify-content: center; /* Center the items */
-    gap: 30px; /* Space between items, replacing margins for cleaner code */
-    list-style: none; /* Remove default bullets */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Style the list items */
 .App-nav ul li {
-    color: #FFFFFF; /* White text for high contrast */
-    font-size: 18px; /* Readable size */
-    font-weight: 400; /* Regular weight for a clean look */
-    padding: 0 10px; /* Horizontal padding for clickable area */
-    line-height: 60px; /* Matches header height to center text vertically */
-    cursor: pointer; /* Indicates interactivity */
-    position: relative; /* For positioning the pseudo-element */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    padding: 0 10px;
+    line-height: 60px;
+    position: relative;
 }
 
-/* Hover and focus states for interactivity */
-.App-nav ul li:hover,
-.App-nav ul li:focus {
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle highlight on hover/focus */
-}
-
-/* Pseudo-element for underline effect */
-.App-nav ul li::after {
-    content: ''; /* Empty content for the underline */
-    position: absolute;
-    bottom: 0; /* Aligns to the bottom of the li */
-    left: 0; /* Full width starting from left */
-    width: 100%; /* Spans the li width */
-    height: 2px; /* Thin underline */
-    background-color: #0074D9; /* Lighter blue accent */
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.3s ease; /* Smooth fade-in/out */
-}
-
-/* Show underline on hover and focus */
-.App-nav ul li:hover::after,
-.App-nav ul li:focus::after {
-    opacity: 0.5; /* Semi-transparent on hover/focus for subtle feedback */
-}
-
-/* Active state for the current page */
-.App-nav ul li.active::after {
-    opacity: 1; /* Fully visible underline for the active item */
-}
+/* Style the links */
 .App-nav ul li a {
     text-decoration: none;
     display: block;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
+
+/* Hover and focus states */
+.App-nav ul li a:hover,
+.App-nav ul li a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Underline animation */
+.App-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0074D9;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover/focus underline effect */
+.App-nav ul li a:hover::after,
+.App-nav ul li a:focus::after {
+    opacity: 0.5;
+}
+
+/* Active state styling */
+.App-nav ul li a.active {
+    font-weight: 700;
+}
+
+.App-nav ul li a.active::after {
+    opacity: 1;
+}
+
+/* Visited state */
 .App-nav ul li a:visited {
-    text-decoration: none;
-    display: block;
-    content: "";
+    color: #FFFFFF;
 }

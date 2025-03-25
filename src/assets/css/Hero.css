@@ -5,15 +5,36 @@
     align-items: center;
     justify-content: flex-start;
     margin: 0;
-    padding: 2rem 1rem; /* optional spacing */
+    padding: 2rem 1rem;
 }
 
 .orb-section {
-    /* The orb is already centered with margin: 0 auto in Orb.css */
-    margin-bottom: 2rem; /* space below the orb */
+    margin-bottom: 2rem;
+    margin-left: 3.5rem;
 }
 
 .text-section {
     max-width: 600px;
     text-align: center;
+}
+
+@media (min-width: 601px) {
+    .hero-container {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        min-height: 70vh;
+        padding: 2rem 5%;
+    }
+
+    .orb-section {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .text-section {
+        text-align: left;
+        max-width: 50ch;
+    }
 }

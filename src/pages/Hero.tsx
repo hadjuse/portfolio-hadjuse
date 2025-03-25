@@ -1,8 +1,8 @@
-import Introduction from "../../components/text/Text/Introduction.tsx";
-import Orb from "../../components/backgrounds/Orb/Orb.tsx";
-import Name from "../../components/text/Name/Name.tsx";
-import "../../assets/css/Orb.css";
-import "./Hero.css"; // We'll add a little layout styling here
+import Introduction from "../components/text/Text/Introduction.tsx";
+import Orb from "../components/backgrounds/Orb/Orb.tsx";
+import Name from "../components/text/Name/Name.tsx";
+import "../assets/css/Orb.css";
+import "../assets/css/Hero.css"; // We'll add a little layout styling here
 
 const introData = {
     title: "🚀 Cloud Engineer Apprentice & AI Enthusiast",
